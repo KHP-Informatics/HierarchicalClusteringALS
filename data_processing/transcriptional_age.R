@@ -13,4 +13,4 @@ exprdata <- read.table(expression_data)
 
 # run the program and save the text file
 res = predict_age(exprdata = exprdata, tissue = tissue_type, exprtype = "counts", idtype = "ENSEMBL", stype = population, chronage = chronage)
-write.table(res, sprintf("%sRNAAge.txt", out_dir))
+write.table(res, sprintf("%s/RNAAge.txt", out_dir))
