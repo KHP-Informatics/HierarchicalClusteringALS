@@ -3,10 +3,10 @@ BiocManager::install("RNAAgeCalc")
 library(RNAAgeCalc)
 
 # define arguments 
-args[1] = expression_data
-args[2] = tissue_type
-args[3] = population
-args[4] = out_dir
+expression_data <- args[1] 
+tissue_type <- args[2] 
+population <- args[3] 
+out_dir <- args[4] 
 
 # load in expression data
 exprdata <- read.table(expression_data)
