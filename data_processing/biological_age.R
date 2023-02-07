@@ -1,12 +1,12 @@
 # this script works after you have git cloned https://github.com/gemmashireby/CorticalClock
 
 # arguments
-args[1] = clock_directory
-args[2] = beta_matrix # rownames=cpgs, colnames=IDs
-args[3] = phenotype_file
-args[4] = phenotype_ids
-args[5] = phenotype_ages
-args[6] = out_dir
+clock_directory <- args[1]
+beta_matrix <- args[2]  # rownames=cpgs, colnames=IDs
+phenotype_file <- args[3] 
+phenotype_ids <- args[4]
+phenotype_ages <- args[5] 
+out_dir <- args[6] 
 
 # source the cortical clock script
 source(sprintf("%s/PredCorticalAge/CorticalClock.r", clock_directory))
